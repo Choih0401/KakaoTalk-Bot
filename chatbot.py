@@ -1,6 +1,6 @@
 ﻿import os
 from flask import Flask, request, jsonify
-from random import random, randint
+import random
 app = Flask(__name__)
 
 def setSeat():
@@ -9,9 +9,11 @@ def setSeat():
 	s = ""
 	for i in range(5):
 		for j in range(6):
-			s += str(num.pop(random.randrange(idx)))+' '
+			tmp = str(num.pop(random.randrange(idx)))
+			if (len(tmp) == 1):tmp = '  '+tmp
+			s+=tmp
+			if (j < 5):s += '  '
 			idx -= 1
-			print(idx)
 			if not idx:
 				break
 		s += '\n'
@@ -29,12 +31,11 @@ def Keyboard():
 def Message():
    dataReceive = request.get_json()
    content = dataReceive['content']
-   a = randint(1,26)
 
    if (content == '랜덤'):
         reqdata = {
             "message" : {
-                "text" : str(a)
+                "text" : str(random.randrange(26))
             },
             "keyboard": {
                 "type" : "buttons",
@@ -53,6 +54,8 @@ def Message():
         }
 
    return jsonify(reqdata)
+
+print(setSeat())
 
 if __name__ == '__main__':
    app.run(host="0.0.0.0", port=3389)
