@@ -1,10 +1,10 @@
-from flask import Flask, request, jsonify
+﻿from flask import Flask, request, jsonify
 from random import random
 app = Flask(__name__)
 
 @app.route('/keyboard')
 def keyboard():
-	return {"type" : "buttons","buttons" : ["시작하기", "도움말"]}
+	return jsonify({"type" : "buttons","buttons" : ["시작하기", "도움말"]})
 
 @app.route('/message', methods=['POST'])
 def message():
@@ -24,7 +24,7 @@ def message():
 			}
 		}
 
-	return reqdata
+	return jsonify(reqdata)
 
 if __name__ == '__main__':
 	app.run(host="0.0.0.0", port=5000)
