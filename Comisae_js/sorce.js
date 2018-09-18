@@ -9,9 +9,6 @@ var a5=['컴퓨터 네트워크', '컴퓨터 네트워크', '컴퓨터 시스템
 if(msg == "/점액"){
 replier.reply("점액?점액?점액?정액이 점액이야?");
 }
-if(msg == "/종민정"){
-replier.reply("ㅋ");
-}
     if (msg == "/오늘") {
         var day = new Date();
         replier.reply("오늘은 " + (day.getMonth() + 1) + "월 " + day.getDate() + "일 입니다.");
@@ -27,18 +24,6 @@ var arr = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', 
 var arr2 = shuffle(sa);
 
     replier.reply(sa[1]);
-}
-if(msg == "/성준"){
- replier.reply("성준 == 종민" );
-}
-if(msg == "/지인"){
- replier.reply("only.... (grin)");
-}
-if(msg=="/민정"){
-replier.reply("지인 따까리");
-}
-if(msg == "/란경"){
-replier.reply("울보(?)");
 }
     if(msg == "/자리"){
         var arr = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26'];
@@ -65,9 +50,6 @@ replier.reply(a5[0] + "\n" + a5[1] + "\n" + a5[2] + "\n" + a5[3] + "\n" + a5[4] 
 }else{
 replier.reply("시간표가 없습니다");
 }
-}
-if(msg == "/민규"){
-replier.reply("(하하)");
 }
 if(msg == "/수학"){
 replier.reply("수학 : 월요일, 화요일, 금요일");
@@ -108,9 +90,6 @@ replier.reply("사회 : 화요일, 수요일, 목요일")
 if(msg == "/컴시일"){
 replier.reply("컴시일 : 수요일, 금요일");
 }
-if(msg == "/임태빈팬클럽"){
-replier.reply("회장 : 종민정\n부회장 : 나지인\n.5기 : 김민규");
-}
 if(msg == "/월요일 시간표" || msg == "/월 시간표"){
 replier.reply(a1[0] + "\n" + a1[1] + "\n" + a1[2] + "\n" + a1[3] + "\n" + a1[4] + "\n" + a1[5] + "\n" +  a1[6]);
 }
@@ -149,18 +128,6 @@ replier.reply(a5[0] + "\n" + a5[1] + "\n" + a5[2] + "\n" + a5[3] + "\n" + a5[4] 
 replier.reply("시간표가 없습니다");
 }
 }
-if(msg == "/태빈"){
-replier.reply("3반 실세 인척 하는 아싸");
-}
-if(msg == "/숙제"){
-replier.reply("영어 B 학습지 채워오기\n컴퓨터시스템일반 학습지 채우기");
-}
-if(msg == "/하늘"){
-replier.reply("빌런");
-}
-if(msg == "/종혁"){
-replier.reply("송준혁");
-}
 if(msg == "/계산기"){
 replier.reply("http://github.com/Choih0401/C_Calculator");
 }
@@ -171,16 +138,8 @@ if(msg == "/카카오톡 봇 만들기"){
 replier.reply("https://github.com/Choih0401/KakaoTalk-Bot");
 }
   if(msg == "/빌런"){
-var peo = ['김란경', '김태경', '나지인', '박유연', '정민정', '최자영', '강주형', '김민규', '김민수', '김종민', '문형석', '박성준', '변근우', '송준혁', '안준서', '윤홍현', '이동건', '이은성', '임태빈', '장현빈', '정규석', '정제일', '채하늘', '최보민', '최준혁', '최현우'];
 var peo2 = shuffle(peo);
-  replier.reply("??? : 빌런은 " + 
-peo2[0]);
-}
-if(msg == "/보민"){
- replier.reply("유폭 부장");
-}
-if(msg == "/제일"){
- replier.reply("레쎄 쀼장");
+  replier.reply("??? : 빌런은 " + peo2[0]);
 }
 if(msg == "Layer7" || msg == "레쎄"){
 replier.reply("http://layer7.kr");
